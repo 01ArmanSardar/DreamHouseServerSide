@@ -1,4 +1,5 @@
 const express=require('express')
+require('dotenv').config();
 const app=express()
 const Houses=require('./HouseS.json')
 const cors=require('cors');
