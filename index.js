@@ -21,5 +21,5 @@ app.get('/houses/:id',(req,res)=>{
 })
 
 app.listen(PORT,'0.0.0.0',()=>{
-    console.log(`this is running in port ${port} `);
+    console.log(`this is running in port ${PORT} `);
 })
