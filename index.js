@@ -19,6 +19,6 @@ app.get('/houses/:id',(req,res)=>{
     console.log(house);
 })
 
-app.listen(port,()=>{
+app.listen(port,'0.0.0.0',()=>{
     console.log(`this is running in port ${port} `);
 })
