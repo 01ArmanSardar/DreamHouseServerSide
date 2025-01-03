@@ -5,7 +5,7 @@ const Houses=require('./HouseS.json')
 const cors=require('cors');
 const PORT = process.env.PORT || 3000;
 app.use(cors());
-
+app.use(express.static('build'));
 app.get('/',(req,res)=>{
     res.send('this is DreamHOUse Home')
 })
