@@ -2,7 +2,7 @@ const express=require('express')
 const app=express()
 const Houses=require('./HouseS.json')
 const cors=require('cors');
-const port =5000
+const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 app.get('/',(req,res)=>{
@@ -19,6 +19,6 @@ app.get('/houses/:id',(req,res)=>{
     console.log(house);
 })
 
-app.listen(port,'0.0.0.0',()=>{
+app.listen(PORT,'0.0.0.0',()=>{
     console.log(`this is running in port ${port} `);
 })
